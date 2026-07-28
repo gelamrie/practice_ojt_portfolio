@@ -9,13 +9,20 @@ function Requirements() {
                 <ul>
                     <li>Cover Letter</li>
                     <li>Intenship Agreement</li>
+                    <li>Company Profile</li>
                     <li>Memorandum of Agreement (MOA)</li>
                     <li>Student Waiver</li>
-                    <li>Letter of Endorsement</li>
-                    <li>Letter of Intent</li>
+                    <a href="https://drive.google.com/file/d/1wxS2glqkuNFUzP9WS8IgafcI3zg3ClcV/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                        <li>Letter of Endorsement</li>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1qwoRBP3yfEGYJK3tR6srlUWCmwdCsUJQ/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                        <li>Letter of Intent</li>
+                    </a>
                     <li>Medical Certificate</li>
                     <li>Consent Form</li>
-                    <li>Curriculum Vitae</li>
+                    <a href="https://drive.google.com/file/d/1jCh-ChImizoJvjC7ol1Pqre9rstVnIY5/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                        <li>Curriculum Vitae</li>
+                    </a>
                     <li>Insurance</li>
                 </ul>
             </div>
