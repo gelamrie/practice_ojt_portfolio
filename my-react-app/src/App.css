@@ -1,4 +1,5 @@
 /* CSS for the website proper components (Header, Content, Footer) */
+@import "tailwindcss";
 
 header nav ul {
   list-style: none;
