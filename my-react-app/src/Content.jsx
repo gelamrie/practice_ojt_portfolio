@@ -35,9 +35,13 @@ import {
     AvatarFallback,
 } from "@/components/ui/avatar"
 
+//Tabs Content
+import AboutTab from "./components/AboutTab";
+import ProjectsTab from "./components/ProjectsTab";
+
 import { Badge } from "@/components/ui/badge";
 
-import DocumentCard from "./components/ui/DocumentCard";
+import DocumentCard from "./components/DocumentCard.jsx";
 
 import { ThemeToggle } from "./components/ui/themetoggle"
 
@@ -63,42 +67,7 @@ export default function Content() {
 
                 {/* Tab 1: About - EXACT original code, constrained to max-w-2xl */}
                 <TabsContent value="about">
-                    <div className="max-w-2xl mx-auto">
-                        <Card>
-                            <CardContent className="flex flex-col items-center gap-3 pt-6">
-                                <Avatar className="h-50 w-50">
-                                    <AvatarImage src={profilePic}
-                                        className="object-contain"
-                                    />
-                                    <AvatarFallback>AM</AvatarFallback>
-                                </Avatar>
-                                <div className="text-center">
-                                    <h2 className="text-4xl font-bold text-foreground">
-                                        Angela Marie De Juan
-                                    </h2>
-
-                                    <div className="flex flex-wrap justify-center gap-2 mt-3 mb-4">
-                                        <Badge>Incoming 3rd Year</Badge>
-
-                                        <Badge variant="secondary">
-                                            BS Computer Engineering
-                                        </Badge>
-
-                                        <Badge variant="outline">
-                                            Intern
-                                        </Badge>
-                                    </div>
-
-                                    <p className="text-md text-muted-foreground">
-                                        I am an incoming 3rd year Computer Engineering student at
-                                        Polytechnic University of the Philippines - Main Campus.
-                                        Currently an intern at 7th Pillar Integrated System Corp.
-                                        Welcome to my OJT portfolio.
-                                    </p>
-                                </div>
-                            </CardContent>
-                        </Card>
-                    </div>
+                    <AboutTab />
                 </TabsContent>
 
                 {/* Tab 2: OJT Requirements - New Grid Layout */}
@@ -193,19 +162,7 @@ export default function Content() {
 
                 {/* Tab 3: Projects - Constrained to max-w-2xl */}
                 <TabsContent value="projects">
-                    <div className="max-w-2xl mx-auto">
-                        <Card>
-                            <CardHeader>
-                                <CardTitle>Featured Work</CardTitle>
-                                <CardDescription>Recent applications built</CardDescription>
-                            </CardHeader>
-                            <CardContent>
-                                <p className="text-sm text-muted-foreground">
-                                    • Practice Portfolio (React + Tailwind + shadcn/ui)
-                                </p>
-                            </CardContent>
-                        </Card>
-                    </div>
+                    <ProjectsTab />
                 </TabsContent>
 
             </Tabs>
