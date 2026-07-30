@@ -4,6 +4,7 @@ import {
     TabsTrigger,
     TabsContent
 } from "@/components/ui/tabs"
+
 import {
     Card,
     CardHeader,
@@ -28,107 +29,15 @@ import {
     AvatarFallback,
 } from "@/components/ui/avatar"
 
+import {
+    beforeOjtDocs,
+    duringOjtDocs,
+    afterOjtDocs,
+} from "./data/documents";
+
 import { Badge } from "@/components/ui/badge"
 
 import { ThemeToggle } from "./components/ui/themetoggle"
-// Document Data Structures
-const beforeOjtDocs = [
-    {
-        title: "Cover Letter",
-        status: "In Progress",
-        downloadUrl: "#",
-        viewUrl: "#",
-    },
-    {
-        title: "Internship Agreement",
-        status: "In Progress",
-        downloadUrl: "#",
-        viewUrl: "#",
-    },
-    {
-        title: "Company Profile",
-        status: "In Progress",
-        downloadUrl: "#",
-        viewUrl: "#",
-    },
-    {
-        title: "Memorandum of Agreement (MOA)",
-        status: "In Progress",
-        downloadUrl: "#",
-        viewUrl: "#",
-    },
-    {
-        title: "Student Waiver",
-        status: "In Progress",
-        downloadUrl: "#",
-        viewUrl: "#",
-    },
-    {
-        title: "Letter of Endorsement",
-        status: "Completed",
-        downloadUrl: 'https://drive.google.com/uc?export=download&id=1wxS2glqkuNFUzP9WS8IgafcI3zg3ClcV',
-        viewUrl: 'https://drive.google.com/file/d/1wxS2glqkuNFUzP9WS8IgafcI3zg3ClcV/view?usp=drive_link',
-    },
-    {
-        title: 'Letter of Intent',
-        status: "Completed",
-        downloadUrl: 'https://drive.google.com/uc?export=download&id=1qwoRBP3yfEGYJK3tR6srlUWCmwdCsUJQ',
-        viewUrl: 'https://drive.google.com/file/d/1qwoRBP3yfEGYJK3tR6srlUWCmwdCsUJQ/view?usp=drive_link',
-    },
-    {
-        title: 'Medical Certificate',
-        status: "In Progress",
-        downloadUrl: "#",
-        viewUrl: "#",
-    },
-    {
-        title: 'Consent Form',
-        status: "In Progress",
-        downloadUrl: "#",
-        viewUrl: "#",
-    },
-    {
-        title: 'Curriculum Vitae',
-        status: "Completed",
-        downloadUrl: 'https://drive.google.com/uc?export=download&id=178HiRcmAUMmr6cf_wvO_ljyOG0tzeukk',
-        viewUrl: 'https://drive.google.com/file/d/178HiRcmAUMmr6cf_wvO_ljyOG0tzeukk/view?usp=drive_link',
-    },
-    {
-        title: 'Insurance',
-        status: "In Progress",
-        downloadUrl: "#",
-        viewUrl: "#",
-    },
-]
-
-const duringOjtDocs = [
-    {
-        title: 'Weekly Report',
-        status: "In Progress",
-        downloadUrl: "#",
-        viewUrl: "#",
-    },
-    {
-        title: 'Weekly Documentation',
-        status: "In Progress",
-        downloadUrl: "#",
-        viewUrl: "#",
-    },
-]
-
-const afterOjtDocs = [
-    {
-        title: 'Evaluation for Supervisor',
-        status: "Not Submitted",
-        downloadUrl: '#', viewUrl: '#'
-    },
-    {
-        title: 'Performance Evaluation Grading',
-        status: "Not Submitted",
-        downloadUrl: '#',
-        viewUrl: '#'
-    },
-]
 
 // Reusable Document Card Component
 function DocumentCard({ title, status, downloadUrl, viewUrl }) {
@@ -368,7 +277,7 @@ export default function Content() {
                                 <CardDescription>Recent applications built</CardDescription>
                             </CardHeader>
                             <CardContent>
-                                <p className="text-sm text-slate-600">
+                                <p className="text-sm text-muted-foreground">
                                     • Practice Portfolio (React + Tailwind + shadcn/ui)
                                 </p>
                             </CardContent>
