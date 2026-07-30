@@ -38,8 +38,7 @@ import {
 //Tabs Content
 import AboutTab from "./components/AboutTab";
 import ProjectsTab from "./components/ProjectsTab";
-
-import { Badge } from "@/components/ui/badge";
+import RequirementsTab from "./components/RequirementsTab";
 
 import DocumentCard from "./components/DocumentCard.jsx";
 
@@ -72,92 +71,7 @@ export default function Content() {
 
                 {/* Tab 2: OJT Requirements - New Grid Layout */}
                 <TabsContent value="requirements" className="space-y-12">
-                    {/* Before OJT Section */}
-                    <div>
-                        <div className="text-center mb-6">
-                            <h3 className="text-xl font-bold text-foreground">Before OJT</h3>
-                            <p className="text-center text-sm text-muted-foreground">Documents to prepare before deployment</p>
-                        </div>
-                        <Carousel
-                            opts={{
-                                align: "start",
-                                loop: true,
-                            }}
-                            className="w-full max-w-6xl mx-auto"
-                        >
-                            <CarouselContent>
-                                {beforeOjtDocs.map((doc, index) => (
-                                    <CarouselItem
-                                        key={index}
-                                        className="basis-full sm:basis-1/2 lg:basis-1/3"
-                                    >
-                                        <DocumentCard {...doc} />
-                                    </CarouselItem>
-                                ))}
-                            </CarouselContent>
-
-                            <CarouselPrevious />
-                            <CarouselNext />
-                        </Carousel>
-                    </div>
-
-                    {/* During OJT Section */}
-                    <div>
-                        <div className="text-center mb-6">
-                            <h3 className="text-xl font-bold text-foreground">During OJT</h3>
-                            <p className="text-sm text-muted-foreground">Ongoing submissions while deployed</p>
-                        </div>
-                        <Carousel
-                            opts={{
-                                align: "start",
-                                loop: true,
-                            }}
-                            className="w-full max-w-6xl mx-auto"
-                        >
-                            <CarouselContent>
-                                {duringOjtDocs.map((doc, index) => (
-                                    <CarouselItem
-                                        key={index}
-                                        className="basis-full sm:basis-1/2 lg:basis-1/3"
-                                    >
-                                        <DocumentCard {...doc} />
-                                    </CarouselItem>
-                                ))}
-                            </CarouselContent>
-
-                            <CarouselPrevious />
-                            <CarouselNext />
-                        </Carousel>
-                    </div>
-
-                    {/* After OJT Section */}
-                    <div>
-                        <div className="text-center mb-6">
-                            <h3 className="text-xl font-bold text-foreground">After OJT</h3>
-                            <p className="text-sm text-muted-foreground">Final requirements upon completion</p>
-                        </div>
-                        <Carousel
-                            opts={{
-                                align: "start",
-                                loop: true,
-                            }}
-                            className="w-full max-w-6xl mx-auto"
-                        >
-                            <CarouselContent>
-                                {afterOjtDocs.map((doc, index) => (
-                                    <CarouselItem
-                                        key={index}
-                                        className="basis-full sm:basis-1/2 lg:basis-1/3"
-                                    >
-                                        <DocumentCard {...doc} />
-                                    </CarouselItem>
-                                ))}
-                            </CarouselContent>
-
-                            <CarouselPrevious />
-                            <CarouselNext />
-                        </Carousel>
-                    </div>
+                    <RequirementsTab />
                 </TabsContent>
 
                 {/* Tab 3: Projects - Constrained to max-w-2xl */}
