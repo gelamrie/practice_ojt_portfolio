@@ -5,44 +5,12 @@ import {
     TabsContent
 } from "@/components/ui/tabs"
 
-import {
-    Card,
-    CardHeader,
-    CardTitle,
-    CardDescription,
-    CardContent
-} from "@/components/ui/card"
-
-import profilePic from './assets/profile.jpg'
-
-import {
-    beforeOjtDocs,
-    duringOjtDocs,
-    afterOjtDocs,
-} from "./data/documents";
-
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-} from "@/components/ui/carousel"
-
-import {
-    Avatar,
-    AvatarImage,
-    AvatarFallback,
-} from "@/components/ui/avatar"
+import { ThemeToggle } from "./components/ui/themetoggle"
 
 //Tabs Content
 import AboutTab from "./components/AboutTab";
 import ProjectsTab from "./components/ProjectsTab";
 import RequirementsTab from "./components/RequirementsTab";
-
-import DocumentCard from "./components/DocumentCard.jsx";
-
-import { ThemeToggle } from "./components/ui/themetoggle"
 
 export default function Content() {
     return (
