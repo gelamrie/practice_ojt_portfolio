@@ -6,11 +6,12 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --text: #0e0e0f;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: oklch(0.922 0 0);
-  --accent: oklch(0.97 0 0);
+  --bg: #ffffff;
+  --bg-card: #f9f9f9;
+  --border: #e0e0e0;
+  --text: #333333;
+  --text-h: #111111;
+  --accent: #2563eb;
 
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
@@ -92,11 +93,11 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --accent: #c084fc;
+    --bg: #121212;
+    --bg-card: #1e1e1e;
+    --border: #2e2e2e;
+    --text: #d1d5db;
+    --text-h: #ffffff;
   }
 }
 
