@@ -46,10 +46,10 @@ export default function Login() {
       <Card className="w-full max-w-md">
 
         <CardHeader>
-          <CardTitle>Creator Sign In</CardTitle>
+          <CardTitle>Login</CardTitle>
 
           <CardDescription>
-            Sign in to manage your portfolio.
+            Log in to your account.
           </CardDescription>
         </CardHeader>
 

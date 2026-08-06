@@ -8,9 +8,11 @@ export default function Dashboard() {
         async function loadData() {
             try {
                 const data = await getAbout();
+                console.log(data);
                 setAbout(data);
             } catch (err) {
                 console.error(err);
+                alert(err.message);
             }
         }
 
@@ -32,4 +34,4 @@ export default function Dashboard() {
             </p>
         </div>
     );
-}
+} 
